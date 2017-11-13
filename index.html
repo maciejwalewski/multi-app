@@ -1,0 +1,132 @@
+<html>
+	<head>
+		<link type = "text/css" rel = "stylesheet" href = "stylesheets/stylesheet.css">
+		<meta charset = "utf-8"/>
+		<title>Multi-app</title>
+        <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+        <script src="https://use.fontawesome.com/d8948b35f4.js"></script>
+		<link type = "text/css" href = "stylesheets/stylesheet_calc.css" rel = "stylesheet"> 
+        <link type = "text/css" href = "stylesheets/stylesheet_vat_calc.css" rel = "stylesheet">
+        <link type = "text/css" href = "stylesheets/stylesheet_todo.css" rel = "stylesheet">
+        <link type = "text/css" href = "stylesheets/stylesheet_piano.css" rel = "stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+
+	<body>
+        <div class = "hamburger_menu" tabindex = "1">
+            <div class = "hamburger_line"></div>
+            <div class = "hamburger_line"></div>
+            <div class = "hamburger_line"></div>
+        </div>
+
+		<div class = "menu_container" style = "display: none;">
+			<ul>
+				<li id = "calc_li" tabindex = "1">Kalkulator</li>
+					<div class = "calculator_loading" style="display: none;"><div class = "loader"></div></div>
+				<li id = "calc_vat_li" tabindex = "1">Kalkulator-VAT</li>
+					<div class = "calc_vat_loading" style="display: none;"><div class = "loader"></div></div>
+				<li id = "todo_li" tabindex = "1">Lista prac</li>
+					<div class = "todo_loading" style="display: none;"><div class = "loader"></div></div>
+                <li id = "piano_li" tabindex = "1">Pianino</li>
+                    <div class = "piano_loading" style="display: none;"><div class = "loader"></div></div>
+			</ul>
+		</div>
+
+		<div class = "fullscreen_bg" style = "display: none;">
+            <video loop muted class = "fullscreen_bg_video" id = "background_video">
+                <source src = "giphy_stallone.mp4">
+            </video>
+            <p class = "calc3000">Calculator 3000</p>
+            <p class = "ultimate">Ultimate tool for ultimate people.</p>
+            <div class = "calc">
+            	<input class = "input_calc">
+                <button class = "delete">Del</button>
+            	<button class = "delete_last">C</button>
+                <button class = "sign" value = "+">+</button>
+                <button class = "number" value = "7">7</button>
+                <button class = "number" value = "8">8</button>
+                <button class = "number" value = "9">9</button>
+                <button class = "sign" value = "-">-</button>
+                <button class = "number" value = "4">4</button>
+                <button class = "number" value = "5">5</button>
+                <button class = "number" value = "6">6</button>
+                <button class = "sign" value = "*">*</button>
+            	<button class = "number" value = "1">1</button>
+            	<button class = "number" value = "2">2</button>
+            	<button class = "number" value = "3">3</button>
+            	<button class = "sign" value = "/">/</button>
+                <button class = "zero" value = "0">0</button>
+            	<button class = "sign" value = ".">.</button>
+            	<button class = "equals" value = "=">=</button>
+            </div>
+        </div>
+
+
+        <div class = "kalkulator_vat" style = "display: none">
+            <p class = "naglowek">Kalkulator podatku VAT</p>
+
+            <div class = "kwota">
+                <p>Podaj kwotę:</p>
+                <input type = "number" class = "kwota_input">
+                <p>Wybierz państwo:</p>
+                <select id = "kraj">
+                    <option value = "1">Polska</option>
+                    <option value = "2">Albania</option>
+                    <option value = "3">Luksemburg</option>
+                    <option value = "4">Szwajcaria</option>
+                </select>
+                <button id="pobierz">Oblicz!</button>
+            </div>
+            <div class = "wynik_container">
+                <p style = "color: red">Kwota z VAT:</p>
+                <p id = "wynik">Wynik</p>
+                <p style = "color: blue">% VAT w <span style = "color: blue" id ="kraju"></span> wynosi:</p>
+                <p id = "procent">%</p>
+                <p style = "color: green">Podatek VAT wynosi:</p>
+                <p id = "kwotavat">Kwota VAT</p>
+            </div>
+        </div>
+
+        <div class = "todo_app" style="display: none">
+            <p class = "app_name">Jobs to do</p>
+            <div class = "line"></div>
+            <input type = "text" class = "task_name">
+            <button class = "add_task">Add task</button>
+            <p class = "line_name">Still to do</p>
+            <div class = "line2"></div>
+            <div class = "to_do_container">
+                <ul class ="to_do_list">              
+                </ul>
+            </div>
+            <p class = "line_name">Done jobs</p>
+            <div class = "line2"></div>
+            <div class = "done_container">
+                <ul class = "done_list">
+                </ul>
+            </div>
+        </div>
+
+        <div class = "piano_app" style = "display: none">
+            <div class = "piano_container">         
+                <div class = "white_key" id = "83"></div>
+                <div class = "white_key" id = "68"></div>
+                <div class = "white_key" id = "70"></div>
+                <div class = "white_key" id = "71"></div>
+                <div class = "white_key" id = "72"></div>
+                <div class = "white_key" id = "74"></div>
+                <div class = "white_key" id = "75"></div>
+                <p>Use <span>S</span> to <span>K</span> keys on keyboard.</p> 
+            </div>
+
+                <audio id = "83" class = "piano_sounds" src = "sounds/do.wav" muted></audio>
+                <audio id = "68" class = "piano_sounds" src = "sounds/re.wav" muted></audio>
+                <audio id = "70" class = "piano_sounds" src = "sounds/mi.wav" muted></audio>
+                <audio id = "71" class = "piano_sounds" src = "sounds/fa.wav" muted></audio>
+                <audio id = "72" class = "piano_sounds" src = "sounds/sol.wav" muted></audio>
+                <audio id = "74" class = "piano_sounds" src = "sounds/la.wav" muted></audio>
+                <audio id = "75" class = "piano_sounds" src = "sounds/si.wav" muted></audio>
+        </div>
+
+		<script src = "script.js"></script>
+	</body>
+</html>

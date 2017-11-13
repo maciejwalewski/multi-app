@@ -1,0 +1,138 @@
+.menu_container ul .calculator_loading .loader, .menu_container ul .calc_vat_loading .loader, .menu_container ul .todo_loading .loader, .menu_container ul .piano_loading .loader {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+
+.hamburger_menu {
+  position: absolute;
+  left: 50px;
+  top: 69px;
+  height: 46px;
+  width: 46px;
+  -moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf));
+  background: -moz-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+  background: -webkit-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+  background: -o-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+  background: -ms-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+  background: linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+  border-radius: 5px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .hamburger_menu:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed));
+    background: -moz-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+    background: -webkit-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+    background: -o-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+    background: -ms-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+    background: linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed',GradientType=0);
+    background-color: #dfdfdf;
+    cursor: pointer; }
+  .hamburger_menu:active, .hamburger_menu:focus {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed));
+    background: -moz-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+    background: -webkit-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+    background: -o-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+    background: -ms-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+    background: linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+    background-color: #dfdfdf; }
+  .hamburger_menu .hamburger_line {
+    width: 28px;
+    height: 4px;
+    background-color: black;
+    margin: 2px;
+    border-radius: 5px; }
+
+.menu_container {
+  height: auto;
+  width: 200px;
+  position: absolute;
+  left: 50px;
+  top: 100px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  font-style: italic;
+  z-index: 100; }
+  .menu_container ul {
+    list-style: none;
+    padding: 0; }
+    .menu_container ul li {
+      -moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
+      -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
+      box-shadow: inset 0px 1px 0px 0px #ffffff;
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf));
+      background: -moz-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+      background: -webkit-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+      background: -o-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+      background: -ms-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+      background: linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf',GradientType=0);
+      background-color: #ededed;
+      border: 1px solid #dcdcdc;
+      display: inline-block;
+      color: #777777;
+      text-decoration: none;
+      text-shadow: 0px 1px 0px #ffffff;
+      box-sizing: border-box;
+      width: 100%;
+      height: 56px;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 56px; }
+      .menu_container ul li:hover {
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed));
+        background: -moz-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+        background: -webkit-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+        background: -o-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+        background: -ms-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+        background: linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed',GradientType=0);
+        background-color: #dfdfdf;
+        cursor: pointer; }
+      .menu_container ul li:active, .menu_container ul li:focus {
+        position: relative;
+        top: 1px;
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed));
+        background: -moz-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+        background: -webkit-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+        background: -o-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+        background: -ms-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+        background: linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed',GradientType=0);
+        background-color: #dfdfdf; }
+    .menu_container ul .calculator_loading, .menu_container ul .calc_vat_loading, .menu_container ul .todo_loading, .menu_container ul .piano_loading {
+      width: 190px;
+      height: 50px;
+      background-color: gray;
+      margin: 0 auto;
+      position: relative; }
+      .menu_container ul .calculator_loading .loader, .menu_container ul .calc_vat_loading .loader, .menu_container ul .todo_loading .loader, .menu_container ul .piano_loading .loader {
+        border: 7px solid transparent;
+        border-radius: 50%;
+        border-top: 7px solid silver;
+        width: 25px;
+        height: 25px;
+        -webkit-animation: spin 2s linear infinite;
+        animation: spin 0.5s linear infinite; }
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg); } }
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+/*# sourceMappingURL=stylesheet.css.map */

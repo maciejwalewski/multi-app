@@ -1,0 +1,210 @@
+body {
+	position: relative;
+	z-index: -80;
+}
+
+.calc{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 400px;
+	background-color: transparent;
+	height: 560px;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: space-evenly;
+	    -ms-flex-pack: space-evenly;
+	        justify-content: space-evenly;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	margin: 0 auto;
+	overflow: hidden;
+	white-space: nowrap;
+	-webkit-transition: margin 0.5s ease;
+	-o-transition: margin 0.5s ease;
+	transition: margin 0.5s ease;
+	
+}
+
+.input_calc{
+	height: 15%;
+	width: 94%;
+	margin:0 auto;
+	background-color: transparent;
+	border: 1px solid black;
+	font-family: Sans-serif;
+	font-size: 50px;
+	font-weight: bold;
+	text-align: right;
+	color: white;
+	
+}
+
+.zero, .delete{
+	width: 47%;
+	height: 15%;
+	color: white;
+	background-color: transparent;
+	-ms-flex-item-align: auto;
+	    align-self: auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: space-evenly;
+	    -ms-flex-pack: space-evenly;
+	        justify-content: space-evenly;
+	font-size: 45px;
+	font-family: Sans-serif;
+	font-weight: bold;
+	text-shadow: 1px 1px black;
+}
+
+.number, .delete_last, .equals, .dot, .sign{
+	width: 22.5%;
+	height: 15%;
+	color: white;
+	background-color: transparent;
+	-ms-flex-item-align: auto;
+	    align-self: auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: space-evenly;
+	    -ms-flex-pack: space-evenly;
+	        justify-content: space-evenly;
+	font-size: 45px;
+	font-family: Sans-serif;
+	font-weight: bold;
+	text-shadow: 1px 1px black;
+}
+
+.calc3000{
+	font-family: Sans-serif;
+	font-style: oblique;
+	font-weight: bold;
+	font-size: 90px;
+	text-shadow: 9px 4px #ff0000;
+	margin-bottom: 0px;
+	margin-right: 2000px;
+	text-align: center;
+	margin-top: 5px;
+	overflow: hidden;
+	white-space: nowrap;
+	-webkit-transition: margin-right 0.5s ease;
+  	-o-transition: margin-right 0.5s ease;
+  	transition: margin-right 0.5s ease;
+}
+
+.ultimate{
+	font-family: Sans-serif;
+	font-style: oblique;
+	font-weight: bold;
+	font-size: 39px;
+	text-shadow: 4px 2px #ff0000;
+	margin-top: 10px;
+	margin-left: 2000px;
+	text-align: center;
+	overflow: hidden;
+	white-space: nowrap;
+	-webkit-transition: margin-right 0.5s ease;
+	-webkit-transition: margin-left 0.5s ease;
+	-o-transition: margin-left 0.5s ease;
+	transition: margin-left 0.5s ease;
+}
+
+.fullscreen_bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+    -webkit-animation: fadein 1.5s linear forwards;
+    animation: fadein 1.5s linear forwards;
+}
+
+@-webkit-keyframes fadein {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadein {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+
+.fullscreen_bg_video{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+	height: 100%;
+	z-index: -100;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen_bg_video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen_bg_video {
+    width: auto;
+    height: 100%;
+  }
+}
+
+
+@media screen and (max-width: 770px) {
+	.calc3000{
+		font-size: 40px;
+		text-shadow: 4px 3px #ff0000
+	}
+
+	.ultimate{
+		font-size: 25px;
+		text-shadow: 3px 2px #ff0000;
+	}
+}
+
+
+@media screen and (max-width: 470px) {
+	.calc3000{
+		font-size: 23px;
+		text-shadow: 2px 1px #ff0000
+	}
+
+	.ultimate{
+		font-size: 13px;
+		text-shadow: 2px 1px #ff0000;
+	}
+
+	.calc{
+		width: 200px;
+		height: 280px;
+	}
+
+	.zero, .delete, .number, .delete_last, .equals, .input_calc, .dot, .sign {
+		font-size: 25px;
+	}
+
+	.body {
+		height: 500px;
+	}
+}
